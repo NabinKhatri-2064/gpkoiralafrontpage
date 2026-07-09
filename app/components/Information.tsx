@@ -36,7 +36,7 @@ const Information = ({ formdata, setformdata }: props) => {
 
   return (
     <main className="md:w-[30%] w-full min-h-screen bg-gray-200 rounded-md p-8">
-      <h1 className="text-4xl text-center pb-6">Edit Information</h1>
+      <h1 className="text-3xl text-center pb-6">gp frontpage generator</h1>
 
       <section className="flex flex-col gap-8">
         {/* TITLE */}
