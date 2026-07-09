@@ -11,7 +11,7 @@ const contributors = [
     name: "Ribesh",
     image: "/ribesh.jpeg",
     contribution:
-      "Proof that height doesn't measure success. Our shortest teammate but somehow the first one to get a job. Carries the team's motivation—and occasionally everyone's expectations too.",
+      " Our  teammate somehow the first one to get a job. Carries the team's motivation—and occasionally everyone's expectations too.",
   },
   {
     name: "Bharat",
