@@ -16,17 +16,29 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://gpfrontpage.vercel.app"),
 
-  title: "GP Frontpage Generator | Generate College Front Pages Online",
+  applicationName :"GP frontpage By Nabin Khatri",
+
+
+  title:{
+    default:"GP frontpage",
+    template: "%s | GP frontpage"
+  },
 
   description:
     "Generate professional GP College front pages online in seconds.",
 
   keywords: [
     "GP Frontpage",
-    "College Frontpage",
-    "Assignment Frontpage",
-    "Report Cover Page",
+    "GP Front Page",
+    "gpfrontpage",
+    "gp front page",
+    "GPFrontPage",
+    "GP Koirala Project Submission",
   ],
+
+  icons: {
+    icon: "/favicon.ico",
+  },
 
   robots: {
     index: true,
@@ -45,8 +57,9 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <Navbar/>
-        {children}</body>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
