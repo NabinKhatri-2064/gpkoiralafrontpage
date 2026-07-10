@@ -25,13 +25,13 @@ const Preview = ({ formdata }: props) => {
     const canvas = await html2canvas(input,{
       scale:4
     });
-    const imgdata = canvas.toDataURL("image/png");
+    const imgdata = canvas.toDataURL("image/jpeg",0.85);
     const pdf = new jsPDF("p", "mm", "a4");
 
     const width = 190;
     const height = (canvas.height * width) / canvas.width;
 
-    pdf.addImage(imgdata, "PNG", 10, 10, width, height);
+    pdf.addImage(imgdata, "JPEG", 10, 10, width, height);
     pdf.save("frontpage.pdf");
   };
 
