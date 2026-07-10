@@ -3,6 +3,7 @@ import Image from "next/image";
 import logo from "@/public/gpkoiralalogo.jpg";
 import jsPDF from "jspdf";
 import React from "react";
+import { Download } from "lucide-react";
 
 type props = {
   formdata: {
@@ -99,8 +100,10 @@ const Preview = ({ formdata }: props) => {
         </div>
       </div>
       <div className="w-full">
-        <button onClick={downloadpdf} className="p-2 bg-blue-500 w-full  text-white transition-transform hover:cursor-pointer hover:bg-blue-700  hover:scale-105 rounded-md ">
-          Download pdf
+        <button 
+        
+        onClick={downloadpdf} className="p-2 bg-blue-500 w-full  gap-2 flex items-center justify-center  text-white transition hover:cursor-pointer hover:bg-blue-700 duration-300 hover:scale-105 rounded-xl hover:rounded-3xl ">
+          Download pdf <Download size={18}/>
         </button>
       </div>
     </div>

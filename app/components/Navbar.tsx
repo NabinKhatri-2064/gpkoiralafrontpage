@@ -14,14 +14,14 @@ const Navbar = () => {
         <div className="flex items-center gap-8 text-sm font-medium">
           <a
             href="https://github.com/NabinKhatri-2064/gpkoiralafrontpage"
-            className="transition hover:text-blue-600 gap-2 flex items-center"
+            className="transition border-b-2 border-transparent hover:border-b-2 p-2 duration-300 hover:border-blue-800 gap-2 flex items-center"
           >
             <span>Source Code</span>
             <Terminal size={18} />
           </a>
           <Link
             href="/"
-            className="transition hover:text-blue-600 flex items-center gap-2"
+            className="transition border-b-2 border-transparent hover:border-b-2 p-2 duration-300 flex items-center hover:border-blue-800 gap-2"
           >
             <span>Generate</span>
             <Files size={18} />
@@ -29,7 +29,7 @@ const Navbar = () => {
 
           <Link
             href="/About"
-            className="transition hover:text-blue-600 flex items-center gap-2"
+            className="transition border-b-2 border-transparent hover:border-b-2 p-2 duration-300 flex items-center hover:border-blue-800 gap-2"
           >
             <span>About Us</span>
             <Info size={18} />
@@ -37,7 +37,7 @@ const Navbar = () => {
 
           <Link
             href="#contact"
-            className="transition hover:text-blue-600 gap-2 flex items-center"
+            className="transition border-b-2 border-transparent hover:border-b-2 p-2 hover:border-blue-800 duration-300 gap-2 flex items-center"
           >
             <span>Contact Us</span>
             <Contact size={18} />

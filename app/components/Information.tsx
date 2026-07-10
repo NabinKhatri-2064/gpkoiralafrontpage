@@ -33,7 +33,7 @@ const Information = ({ formdata, setformdata }: props) => {
   };
 
   return (
-    <main className="md:w-[50%] w-full h-full  bg-white shadow-2xl drop-shadow-2xl  rounded-lg p-8">
+    <main className="md:w-[50%] w-full h-full mt-10  border-2 border-zinc-300 bg-white shadow-2xl drop-shadow-2xl  rounded-lg p-8">
       <h1 className="text-3xl text-center pb-6 lobster-two-regular-italic">Edit Information</h1>
 
       <section className="flex flex-col gap-8">
