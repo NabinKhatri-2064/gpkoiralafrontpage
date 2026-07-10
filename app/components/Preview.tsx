@@ -39,7 +39,7 @@ const Preview = ({ formdata }: props) => {
     <div className="w-full flex justify-center flex-col gap-8 items-center p-10">
       <div
         id="pdf"
-        className="w-198.5 min-h-280.75   border-2  p-8 rounded-md font-[Times-new-roman]  "
+        className="w-198.5 min-h-280.75   border border-gray-300  p-8 rounded-md font-[Times-new-roman]  "
       >
         <div className="flex justify-center">
           <img src="./gpkoiralalogo.jpg" width={100} height={100} alt="logo" />
