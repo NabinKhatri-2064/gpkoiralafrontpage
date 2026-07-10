@@ -10,7 +10,6 @@ type props = {
     name: string;
     Faculty: string;
     Semester: string;
-    address: string;
     date: string;
     teacher:string;
   };

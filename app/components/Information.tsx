@@ -6,7 +6,6 @@ type props = {
     name: string;
     Faculty: string;
     Semester: string;
-    address: string;
     date: string;
     teacher:string;
   };
@@ -17,7 +16,6 @@ type props = {
       name: string;
       Faculty: string;
       Semester: string;
-      address: string;
       date: string;
       teacher:string;
     }>
@@ -35,8 +33,8 @@ const Information = ({ formdata, setformdata }: props) => {
   };
 
   return (
-    <main className="md:w-[30%] w-full min-h-screen bg-gray-200 rounded-md p-8">
-      <h1 className="text-3xl text-center pb-6">gp frontpage generator</h1>
+    <main className="md:w-[50%] w-full h-full  bg-white shadow-2xl drop-shadow-2xl  rounded-lg p-8">
+      <h1 className="text-3xl text-center pb-6 lobster-two-regular-italic">Edit Information</h1>
 
       <section className="flex flex-col gap-8">
         {/* TITLE */}
@@ -47,7 +45,7 @@ const Information = ({ formdata, setformdata }: props) => {
             name="title"
             value={formdata.title ?? ""}
             onChange={handleinputchange}
-            className="outline p-2 rounded-md bg-blue-"
+            className=" p-4 rounded-lg  outline-gray-100  focus:outline-blue-600 outline-2 shadow-md shadow-black/40"
             placeholder="Report on Discrete Structure"
           />
         </div>
@@ -61,7 +59,7 @@ const Information = ({ formdata, setformdata }: props) => {
             name="name"
             value={formdata.name ?? ""}
             onChange={handleinputchange}
-            className="border p-2 rounded-md"
+            className=" p-4 rounded-lg  outline-gray-100  focus:outline-blue-600 outline-2 shadow-md shadow-black/40"
             placeholder="Nabin Khatri"
           />
         </div>
@@ -75,7 +73,7 @@ const Information = ({ formdata, setformdata }: props) => {
             name="Faculty"
             value={formdata.Faculty ?? ""}
             onChange={handleinputchange}
-            className="border p-2 rounded-md"
+            className=" p-4 rounded-lg  outline-gray-100  focus:outline-blue-600 outline-2 shadow-md shadow-black/40"
             placeholder="BCA"
           />
         </div>
@@ -89,24 +87,12 @@ const Information = ({ formdata, setformdata }: props) => {
             name="Semester"
             value={formdata.Semester ?? ""}
             onChange={handleinputchange}
-            className="border p-2 rounded-md"
+           className=" p-4 rounded-lg  outline-gray-100  focus:outline-blue-600 outline-2 shadow-md shadow-black/40"
             placeholder="2nd Semester"
           />
         </div>
 
-      {/* ADDRESS */}
-
-        <div className="flex flex-col">
-          <label>Address</label>
-
-          <input
-            name="address"
-            value={formdata.address ?? ""}
-            onChange={handleinputchange}
-            className="border p-2 rounded-md"
-            placeholder="Dakshindhoka, Kathmandu"
-          />
-        </div>
+     
 
     {/* DATE */}
 
@@ -117,7 +103,7 @@ const Information = ({ formdata, setformdata }: props) => {
             name="date"
             value={formdata.date ?? ""}
             onChange={handleinputchange}  
-            className="border p-2 rounded-md"
+           className=" p-4 rounded-lg  outline-gray-100  focus:outline-blue-600 outline-2 shadow-md shadow-black/40"
             placeholder="2083-04-01"
           />
         </div>
@@ -131,7 +117,7 @@ const Information = ({ formdata, setformdata }: props) => {
             name="teacher"
             value={formdata.teacher ?? ""}
             onChange={handleinputchange}  
-            className="border p-2 rounded-md"
+            className=" p-4 rounded-lg  outline-gray-100  focus:outline-blue-600 outline-2 shadow-md shadow-black/40"
             placeholder="Govinda Raj Khaniya"
           />
         </div>

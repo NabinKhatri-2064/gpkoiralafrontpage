@@ -11,14 +11,13 @@ const page = () => {
     name: "",
     Faculty: "",
     Semester: "",
-    address: "",
     date: "",
     teacher: "",
   });
 
   return (
-    <main className="pt-20">
-      <section className="flex-col md:flex md:flex-row  gap-5">
+    <main className="pt-25 px-20">
+      <section className="flex-col md:flex md:flex-row   gap-5">
         <Information formdata={formdata} setformdata={setFormData} />
         <Preview formdata={formdata} />
       </section>
