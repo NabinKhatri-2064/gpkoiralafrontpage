@@ -12,43 +12,44 @@ type props = {
     Faculty: string;
     Semester: string;
     date: string;
-    teacher:string;
+    teacher: string;
   };
 };
 
 const Preview = ({ formdata }: props) => {
   const downloadpdf = async () => {
-    const input = document.getElementById("pdf");
+    try {
+      const input = document.getElementById("pdf");
 
-    if (!input) return;
+      if (!input) return;
 
-    const canvas = await html2canvas(input,{
-      scale:4
-    });
-    const imgdata = canvas.toDataURL("image/jpeg",0.85);
-    const pdf = new jsPDF("p", "mm", "a4");
+      const canvas = await html2canvas(input, {
+        scale: 4,
+      });
+      const imgdata = canvas.toDataURL("image/jpeg", 0.85);
+      const pdf = new jsPDF("p", "mm", "a4");
 
-    const width = 190;
-    const height = (canvas.height * width) / canvas.width;
+      const width = 190;
+      const height = (canvas.height * width) / canvas.width;
 
-    pdf.addImage(imgdata, "JPEG", 10, 10, width, height);
-    pdf.save("frontpage.pdf");
+      pdf.addImage(imgdata, "JPEG", 10, 10, width, height);
+      pdf.save("frontpage.pdf");
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (
     <div className="w-full flex justify-center flex-col gap-8 items-center p-10">
       <div
         id="pdf"
-        className="w-198.5 min-h-280.75   border border-gray-300  p-8 rounded-md font-[Times-new-roman]  "
+        className="w-198.5 min-h-280.75   border border-[#d1d5db] p-8 rounded-md font-[Times-new-roman]  "
       >
         <div className="flex justify-center">
           <img src="./gpkoiralalogo.jpg" width={100} height={100} alt="logo" />
-
         </div>
 
-
         <div className="flex flex-col gap-4 items-center">
-
           <p className=" text-[35px] font-semibold">Tribhuwan University</p>
           <p className=" text-[28px] font-semibold">
             G.P Koirala Memorial(Community)College
@@ -67,7 +68,6 @@ const Preview = ({ formdata }: props) => {
               <p>Faculty </p>
               <p>Semester </p>
               <p>Date </p>
-
             </div>
 
             <div className="flex flex-col gap-4 text-2xl">
@@ -76,7 +76,6 @@ const Preview = ({ formdata }: props) => {
               <p>:&nbsp;&nbsp;{formdata.Faculty}</p>
               <p>:&nbsp;&nbsp;{formdata.Semester}</p>
               <p>:&nbsp;&nbsp;{formdata.date}</p>
-
             </div>
           </div>
 
@@ -94,16 +93,17 @@ const Preview = ({ formdata }: props) => {
             <div className="flex flex-col items-center ">
               <p className="text-2xl">Signature</p>
               <p className="text-2xl">...................</p>
-              <p className="text-2xl">{(formdata.teacher)}</p>
+              <p className="text-2xl">{formdata.teacher}</p>
             </div>
           </div>
         </div>
       </div>
       <div className="w-full">
-        <button 
-        
-        onClick={downloadpdf} className="p-2 bg-blue-500 w-full  gap-2 flex items-center justify-center  text-white transition hover:cursor-pointer hover:bg-blue-700 duration-300 hover:scale-105 rounded-xl hover:rounded-3xl ">
-          Download pdf <Download size={18}/>
+        <button
+          onClick={downloadpdf}
+          className="p-2 bg-blue-500 w-full  gap-2 flex items-center justify-center  text-white transition hover:cursor-pointer hover:bg-blue-700 duration-300 hover:scale-105 rounded-xl hover:rounded-3xl "
+        >
+          Download pdf <Download size={18} />
         </button>
       </div>
     </div>
