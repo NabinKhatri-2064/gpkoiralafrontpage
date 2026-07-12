@@ -33,7 +33,7 @@ const Preview = ({ formdata }: props) => {
       const height = (canvas.height * width) / canvas.width;
 
       pdf.addImage(imgdata, "JPEG", 10, 10, width, height);
-      pdf.save("frontpage.pdf");
+      pdf.save("Designed By Nabin Khatri🙌.pdf");
     } catch (error) {
       console.log(error);
     }
