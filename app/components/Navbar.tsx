@@ -6,8 +6,15 @@ const Navbar = () => {
     <nav className="w-full border-b-white fixed z-10  bg-white shadow-2xl mb-10">
       <div className="mx-auto flex h-22 max-w-7xl items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="text-2xl Logo  text-blue-600">
+        <Link href="/" className="text-2xl Logo flex justify-center items-center gap-4  text-blue-600">
           BKNR
+          <img
+          src="./logo.jpeg"
+          width={128}
+          height={128}
+          alt="BKNR"
+          className="rounded-[90%]"
+          />
         </Link>
 
         {/* Navigation */}
