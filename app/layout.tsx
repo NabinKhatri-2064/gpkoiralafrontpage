@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://gpfrontpage.vercel.app"),
+  metadataBase: new URL("https://nabinkhatri64.com.np/"),
 
   // Google uses this property to understand the name of the site
   applicationName: "GP frontpage",
@@ -36,12 +36,11 @@ export const metadata: Metadata = {
     "GP Koirala Project Submission",
   ],
 
-  // Ensure this file actually exists in your public/ folder
-  // For better results across devices, add an icon.png (32x32 or 48x48) to your public folder too
+  
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
-    apple: "/favicon.ico", // Or an apple-touch-icon.png if you have one
+    apple: "/favicon.ico", 
   },
 
   robots: {
@@ -60,7 +59,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "GP frontpage",
-    "url": "https://gpfrontpage.vercel.app",
+    "url": "https://nabinkhatri64.com.np",
   };
 
   return (
