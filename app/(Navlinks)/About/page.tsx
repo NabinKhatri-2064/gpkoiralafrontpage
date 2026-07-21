@@ -3,11 +3,11 @@ import Image from "next/image";
 
 const contributors = [
   {
-    name: "Krish (Budo)",
-    image: "/krish.jpeg",
+    name: "Krish (Messi Paglu 😘)",
+    image: "/krish oliya.jpeg",
     post: "Frontend-developer",
     contribution:
-      "Dedicated countless hours to researching... absolutely nothing useful. Still managed to become the team's certified relationship analyst. If there's a girl within a 5 km radius, Budo somehow knows.",
+      "Dedicated countless hours to researching... absolutely nothing useful. .Messi Die hard fan ,Above pic was taken when Messi and Krish were making strategy for Spain vs Argentina match (Results = iykyk) ",
   },
   {
     name: "Ribesh",
